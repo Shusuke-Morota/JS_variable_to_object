@@ -1,7 +1,13 @@
-let name = 'Tim';
-
-function hello(name) {
-    console.log('hello' + name);
+let obj = {
+    prop1: 'value1',
+    prop2: 'value2',
+    prop3: function () {
+        console.log('value3');
+    },
+    prop4: {
+        prop5: 'value5'
+    }
 }
 
-hello(name);
+obj.prop3();
+console.log(obj.prop1);
