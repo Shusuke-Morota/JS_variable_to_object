@@ -1,5 +1,7 @@
-let a = 'hello';
-const b = 'bye';
+let name = 'Tim';
 
-console.log(a);
-console.log(b);
+function hello(name) {
+    console.log('hello' + name);
+}
+
+hello(name);
