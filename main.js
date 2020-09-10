@@ -1,13 +1,16 @@
-function a() {
-    console.log('a is called');
-}
 a();
 
+function a() {
+    let c = 1;
+    console.log(c);
 
-//関数や変数は実行前にメモリ上に配置されるので、コードの実行が定義の前でも正しく反映される。
+    d();
+    function d() {
+        console.log('d is called');
+    }
+    console.log('a is called');
+}
 
-//例) functionの前にa(); が来ていても正しく反映される。
-
-
+const b = 0;
 console.log(b);
-var b = 0;
+
