@@ -1,13 +1,18 @@
-let obj = {
-    prop1: 'value1',
-    prop2: 'value2',
-    prop3: function () {
-        console.log('value3');
-    },
-    prop4: {
-        prop5: 'value5'
-    }
+let a = 0;
+function b() {
+    console.log(this, arguments, a)
 }
 
-obj.prop3();
-console.log(obj.prop1);
+//console.log(a);
+b();
+
+
+
+//グローバルコンテキストとはJavaScriptファイル直下の実行環境をいう。
+
+//関数コンテキストというのは関数が実行されているときに生み出されるコンテキストのこという。
+//ここでは宣言された関数bbのナビブロックの中(中かっこ)が関数コンテキストとなる。
+
+//外部変数とは(ここでは関数の外で宣言されているa)
+
+//関数コンテキスト内で使用できるのはthis, arguments, 外部変数となる。
